@@ -24,16 +24,4 @@ defmodule ExAgent do
     IO.puts("test")
     ExAgent.Supervisor.start_link(name: ExAgent.Supervisor)
   end
-
-  # @spec write_code_to_disk(
-  #         binary
-  #         | maybe_improper_list(
-  #             binary | maybe_improper_list(any, binary | []) | byte,
-  #             binary | []
-  #           )
-  #       ) :: :ok
-  # def write_code_to_disk(code) do
-  #   random_string = :rand.uniform(999888777) |> Integer.to_string()
-  #   FileUtil.create_and_write_file("/tmp/" <> random_string, code)
-  # end
 end
