@@ -21,7 +21,7 @@ defmodule ExAgent.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      mod: {ExAgent.Application, []}
+      mod: {ExAgent, []}
     ]
   end
 
